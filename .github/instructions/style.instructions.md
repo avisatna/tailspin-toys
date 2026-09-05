@@ -40,6 +40,14 @@ ALL UI components MUST use dark theme colors:
 - Mobile-first approach
 - Ensure readability on all screen sizes
 
+## TypeScript and formatting standards
+
+- Write explicit TypeScript types for function parameters and return values, especially in `db/`, `src/lib/`, and shared helpers.
+- Prefer descriptive names over abbreviated ones; avoid `any` unless the type truly cannot be expressed.
+- Keep formatting consistent with the repository: semicolons, single-quoted strings, trailing commas in multiline objects and arrays, and one concise statement per line.
+- Use comments to explain intent, trade-offs, or edge cases. If a comment would just repeat a nearby declaration, delete it and let the code speak for itself.
+- Let ESLint enforce cleanup like unused variables (`@typescript-eslint/no-unused-vars`) and keep the TypeScript rule set in `eslint.config.js` as the default quality gate.
+
 ## Utility Classes
 
 - Prefer utility classes over custom CSS when possible
