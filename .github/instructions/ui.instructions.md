@@ -6,6 +6,13 @@ description: 'Central UI strategy and component development philosophy'
 
 This file defines the central UI development strategy for Tailspin Toys. Technology-specific guidance is in separate instruction files.
 
+## Commenting and documentation standards
+
+- Comment intent, not mechanics. Explain why a block exists, the trade-off it reflects, or the edge case it handles — do not restate what the code says in plain English.
+- Treat outdated comments as bugs: update or remove them when the surrounding code changes.
+- Prefer JSDoc/TSDoc for public contracts and exported APIs, especially Astro component `Props` interfaces and data-layer helpers.
+- Keep comments close to the logic they explain, and avoid stale TODOs or vague notes that don't describe a concrete decision.
+
 ## Component Architecture
 
 ### Technology Separation
